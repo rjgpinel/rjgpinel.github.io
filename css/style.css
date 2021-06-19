@@ -1,0 +1,165 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+body {
+  padding-top: 60.5px;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+#person-name {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.nav-item:hover {
+    background-color: #E9ECEF;
+}
+
+.navbar .navbar-collapse .navbar-nav > li > a:hover {
+    color: #343A40;
+}
+
+.navbar .navbar-collapse .navbar-nav > li > a.section-active {
+    background-color: #E9ECEF;
+    color: #343A40;
+    font-weight: bold;
+}
+
+/* Bio
+------------------------- */
+#bio-wrapper {
+    background-color: #ebebeb;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+#position-title {
+    color: #000;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+#profile-img {
+    margin-top:30px;
+    width:300px
+
+}
+
+#profile-description {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#bio .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 6px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+#bio .social-links a:hover {
+    background: #A4A4A4;
+    color: #fff;
+    text-decoration: none;
+}
+
+#bio #terminal-space {
+    font-weight:bold;
+    animation: blinker 1s linear infinite;
+
+}
+
+#bio #terminal-cursor{
+
+    /* color:#8E44AD; */
+    font-weight: bold;
+}
+
+#bio #profile-description a{
+    color: #212431;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#bio #profile-description a:hover{
+    color: #A4A4A4;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+#bio #resume .logo-institution {
+
+    height: 50px
+}
+
+#bio #resume .resume-entry {
+    margin-top: 20px;
+
+}
+
+#bio #resume .resume-title {
+    color: #000000;
+    margin-top:20px;
+}
+
+
+#bio #resume .resume-entry-desc {
+    margin-bottom:10px;
+
+}
+
+#bio #resume .resume-entry-desc h5 {
+
+    font-size:18px;
+    color: #212431;
+
+}
+
+/* Research Publications
+------------------------- */
+
+/* Thin out the marketing headings */
+.publication-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+.publication-overview {
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.publication-description {
+
+    vertical-align: middle;
+}
+
+.publication-description i {
+    font-size: 40px
+}
+
+.publication-description a {
+    color: #212431
+}
+
+.publication-description a:hover {
+    color: #A4A4A4;
+}
+
