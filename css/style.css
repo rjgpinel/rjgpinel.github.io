@@ -158,7 +158,8 @@ body {
 }
 
 .publication-overview {
-    height: 220px;
+    max-height: 220px;
+    max-width: 320px;
     margin-bottom: 20px;
 }
 
