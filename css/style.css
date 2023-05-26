@@ -173,10 +173,22 @@ body {
 }
 
 .publication-description a {
-    color: #212431
+    color: #212431;
 }
 
 .publication-description a:hover {
     color: #A4A4A4;
+}
+
+.teaching-description a {
+    color: #212431;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.teaching-description a:hover {
+    color: #A4A4A4;
+    font-weight: bold;
+    text-decoration: none;
 }
 
