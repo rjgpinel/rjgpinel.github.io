@@ -196,3 +196,7 @@ body {
     vertical-align: bottom;
     display: inline-block;
 }
+
+#miscellaneous {
+    height: 220;   
+}
