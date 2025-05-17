@@ -102,49 +102,22 @@
             <div class="tab-content abstract-content active">
                 <div class="abstract">
                     <p>
-                        This PhD defense will focus on the development of representations and learning algorithms to
-                        perform visually-guided robotic manipulation tasks in unstructured environments. One
-                        of the final goals of robotics is to train robots that can autonomously solve a wide range of
-                        tasks in the real world based on human instructions. To make progress towards this goal,
-                        this manuscript covers three main challenges: closing the sim-to-real gap for visuomotor
-                        policies, integrating 3D point cloud representations with language instructions to improve
-                        the performance of robotic manipulation in multi-task settings, and developing a generalist
-                        language-guided visuomotor policy for robotic manipulation.
+                        This talk will focus on learning visuomotor policies for robotic manipulation in unstructured environments.
+                        One of the main challenges in this area is building robust, generalist policies that can perceive, plan, and act based on both visual and language inputs. 
+                        We address this by tackling three challenges: sim-to-real transfer, multi-modal representation learning, and policy generalization.
                     </p>
                     <p>
-                        We first address the challenge of sim-to-real transfer in robotic manipulation. Training
-                        policies in simulation is less time-consuming and safer than in the real world. However, the
-                        discrepancies between simulation and the real environment can limit the transferability of
-                        policies trained in simulation to the real world. This issue is known as the sim-to-real gap,
-                        and domain randomization (DR) is a known technique to address this gap. DR allows to
-                        perform sim-to-real policy transfer by randomizing the simulation’s appearance (textures,
-                        lighting, object colors, and camera viewpoints) during training. However, selecting the
-                        right range of parameters randomization is not trivial. This thesis proposes a data-driven
-                        strategy to systematically select the DR parameters using multi-object localization as a
-                        proxy task.
+                        First, we propose a data-driven approach to optimize domain randomization parameters for sim-to-real transfer, using multi-object localization as a proxy task. 
+                        This method improves the transferability of visuomotor policies trained in simulation to the real world.
                     </p>
                     <p>
-                        We then focus on language-guided robotic manipulation and propose PolarNet and
-                        3D-LOTUS, two 3D point cloud-based methods to integrate visual inputs and language
-                        instructions to predict manipulation actions. Both methods use efficient point cloud
-                        encoders and multimodal transformers to combine the text instructions and the geometric
-                        information from point clouds, enabling more accurate and efficient manipulation than
-                        2D image-based approaches. Both 3D-based policies outperform state-of-the-art models
-                        across various multi-task settings of the RLBench benchmark and successfully transfer to
-                        the real-world robot, highlighting their performance in diverse environments.
-                        The last part of this thesis focuses on developing generalist robot policies for robotic
-                        manipulation. First, we propose a GemBench, a comprehensive benchmark for evaluating
-                        the generalization capabilities of such policies on a set of tasks with four levels of increas-
-                        ing difficulty: (1) novel object placements, (2) novel rigid objects, (3) novel articulated
-                        objects, and (4) long-horizon tasks that require sequential planning. We then propose
-                        3D-LOTUS++, which extends our point cloud-based policy 3D-LOTUS by incorporating
-                        large language models (LLMs) for task planning and vision-language models (VLMs) for
-                        object grounding. This modular framework achieves state-of-the-art performance on this
-                        new benchmark.
+                        Next, we introduce PolarNet and 3D-LOTUS, two architectures that leverage 3D point cloud encoders and multimodal transformers to fuse language and visual inputs for robotic manipulation. 
+                        These models significantly outperform 2D-based baselines across multiple tasks in the RLBench benchmark and demonstrate strong real-world performance.
                     </p>
                     <p>
-                        Through these contributions, this thesis advances the development of robust, precise,
-                        and generalist visuomotor policies for robotic manipulation.</p>
+                        Finally, we present GemBench, a new benchmark designed to evaluate policy generalization across increasing task complexity, and 3D-LOTUS++, a modular policy that integrates large language models for 
+                        high-level planning and vision-language models for object grounding. This system achieves state-of-the-art results on GemBench, demonstrating capabilities in long-horizon and diverse manipulation tasks.
+                    </p>
                 </div>
             </div>
             
@@ -212,9 +185,9 @@
             <div class="tab-content remote-content">
                 <div class="livestream-info">
                     <p class="date-time">Live: 2PM-3PM (CET)</p>
-                    <p>The defense will be livestreamed on Zoom</p>
+                    <p>The defense will be livestreamed on Youtube</p>
                     <div class="video-container">
-                       Link coming soon... 
+                        <iframe width="1446" height="813" src="https://www.youtube.com/embed/8aFr6NZ6xok" title="Learning visuomotor policies for robotic manipulation - Ricardo Garcia-Pinel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

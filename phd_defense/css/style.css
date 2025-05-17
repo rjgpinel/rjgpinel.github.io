@@ -81,6 +81,10 @@ html {
       cursor: url('../images-mouse/gripper.png'), auto;
 }
 
+html:active, body:active {
+      cursor: url('../images-mouse/gripper-close.png'), auto;
+}
+
 a, a:hover {
       cursor: url('../images-mouse/gripper-close.png'), pointer;
 }
