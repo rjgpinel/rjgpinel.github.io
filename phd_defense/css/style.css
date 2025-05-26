@@ -514,7 +514,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-    .map-caption {
+    .map-caption  height="14px"{
         font-size: 0.9rem;
     }
 }
