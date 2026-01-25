@@ -496,7 +496,23 @@
                 <!-- /END THE FEATURETTES -->
             </div><!-- /.container -->
             <div id="miscellaneous">
-                <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=600&t=tt&d=wcSDNrByaZ2NPXebIm1FlNUSHQfgcFA5jlx5K40D7Sg&co=212529&cmo=f700ff&cmn=68ffa3"></script>
+                <div id="clustrmaps-container"></div>
+
+                <script>
+                (function () {
+                    const isPhone = window.matchMedia("(max-width: 600px)").matches;
+                    const w = isPhone ? 180 : 300; // match your CSS sizes
+
+                    const s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.id = "clustrmaps";
+                    s.src =
+                    "//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=" + w +
+                    "&t=tt&d=wcSDNrByaZ2NPXebIm1FlNUSHQfgcFA5jlx5K40D7Sg&co=212529&cmo=f700ff&cmn=68ffa3";
+
+                    document.getElementById("clustrmaps-container").appendChild(s);
+                })();
+                </script>
                 <hr class="featurette-divider">
             </div>
 

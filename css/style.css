@@ -274,3 +274,15 @@ body {
     min-width: auto;
   }
 }
+
+#clustrmaps-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #clustrmaps-container {
+    max-width: 180px;
+  }
+}
